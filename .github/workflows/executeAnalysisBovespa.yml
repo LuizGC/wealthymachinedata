@@ -6,6 +6,6 @@ jobs:
   callAnalysis:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@bovespa
       - name: Start Analysis
         run: sh .github/workflows/executeAnalysisBovespa.sh
