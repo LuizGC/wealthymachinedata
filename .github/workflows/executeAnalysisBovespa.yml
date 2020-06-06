@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Start Analysis
-        run: sh .github/workflows/executeAnalysisBovespa.sh
+        run: sh .github/workflows/executeAnalysis.sh
