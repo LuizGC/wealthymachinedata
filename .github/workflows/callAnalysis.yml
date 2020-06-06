@@ -1,11 +1,12 @@
 name: Call Analysis
 on:
   push:
-    branches: [ bovespa ]
+    branches:
+    - bovespa
 jobs:
-  build:
+  callAnalysis:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
