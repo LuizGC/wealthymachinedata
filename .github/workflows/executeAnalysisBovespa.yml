@@ -10,4 +10,4 @@ jobs:
         with:
           ref: bovespa
       - name: Start Analysis
-        run: sh .github/workflows/executeAnalysis.sh
+        run: sh .github/workflows/executeAnalysis.sh ${{ github.event.client_payload.file }}
