@@ -1,0 +1,11 @@
+name: Execute Analysis Bovespa
+on:
+  repository_dispatch:
+    types: [start-analysis-bovespa]
+jobs:
+  callAnalysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Start Analysis
+        run: sh .github/workflows/executeAnalysisBovespa.sh
