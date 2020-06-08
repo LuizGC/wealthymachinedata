@@ -14,4 +14,4 @@ jobs:
         with:
           java-version: '11.0.1'
       - name: Start Analysis
-        run: bash .github/workflows/executeAnalysis.sh ${{ github.event.client_payload.file }} ${{ secrets.GH_TOKEN }} ${{ secrets.NAME }} ${{ secrets.USER_NAME }} github.com/${{ github.repository }}
+        run: bash .github/workflows/executeAnalysis.sh ${{ github.event.client_payload.file }} ${{ secrets.GH_TOKEN }} ${{ secrets.NAME }} ${{ secrets.USER_NAME }} ${{ secrets.REPOSITORY }}
