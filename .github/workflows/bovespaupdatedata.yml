@@ -1,7 +1,7 @@
 name: Update daily data from Bovespa Stock Exchange
 on:
   schedule:
-    - cron:  '0 8 * * 2-6'
+    - cron:  '0 5 * * 2-6'
 jobs:
   update-data:
     runs-on: ubuntu-latest
