@@ -1,6 +1,5 @@
 #!/bin/bash
 artifactId=`cat .github/workflows/artifactId`
-wget http://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A2020.ZIP
 echo "ArtifactId: $artifactId"
 zipArtifact="wealthy-machine.zip"
 runArtifact="wealthy-0.1.jar"
