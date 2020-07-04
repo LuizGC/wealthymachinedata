@@ -1,5 +1,6 @@
 #!/bin/bash
 artifactId=`cat .github/workflows/artifactId`
+echo artifactId
 zipArtifact="wealthy-machine.zip"
 runArtifact="wealthy-0.1.jar"
 curl -L -H "authorization: Bearer $1" -o $zipArtifact "https://api.github.com/repos/LuizGC/wealthymachine/actions/artifacts/$artifactId/zip"
